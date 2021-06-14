@@ -8,6 +8,7 @@ class NikeMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: SafeArea(
           child:
               Scaffold(backgroundColor: Colors.indigoAccent, body: MenuPage())),
@@ -376,16 +377,16 @@ class NikeHome extends StatelessWidget {
                         bottom: BorderSide(width: 1.0, color: Colors.blue),
                       ),
                     ),
-                    child: FlatButton(
+                    child: TextButton(
                       onPressed: () {},
                       child: Text('MEN'),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Text('WOMEN'),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Text('KIDS'),
                   )
@@ -435,7 +436,7 @@ class NikeHome extends StatelessWidget {
                             width: 200.0,
                           ),
                           Positioned(
-                            bottom: 5.0,
+                            bottom: 0.3,
                             right: 0.0,
                             left: 0.0,
                             child: Row(
@@ -447,7 +448,7 @@ class NikeHome extends StatelessWidget {
                                     Text('\$45',
                                         style: TextStyle(
                                           fontFamily: 'Futura',
-                                          fontSize: 20,
+                                          fontSize: 15,
                                           color: Colors.black,
                                           letterSpacing: -0.729,
                                           fontWeight: FontWeight.w700,

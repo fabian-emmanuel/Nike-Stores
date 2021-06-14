@@ -10,6 +10,7 @@ class NikeUi2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Page2Content(),
     );
   }
@@ -349,7 +350,7 @@ class Page2Content extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        child: FlatButton(
+        child: TextButton(
           onPressed: () {},
           child: Text(
             'BUY NOW',

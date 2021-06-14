@@ -10,6 +10,7 @@ class NikeUi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: NikeHome(),
     );
   }
@@ -108,16 +109,16 @@ class NikeHome extends StatelessWidget {
                         bottom: BorderSide(width: 1.0, color: Colors.blue),
                       ),
                     ),
-                    child: FlatButton(
+                    child: TextButton(
                       onPressed: () {},
                       child: Text('MEN'),
                     ),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Text('WOMEN'),
                   ),
-                  FlatButton(
+                  TextButton(
                     onPressed: () {},
                     child: Text('KIDS'),
                   )

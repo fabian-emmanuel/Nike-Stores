@@ -8,6 +8,7 @@ class NikeUi3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.indigo,
@@ -293,7 +294,7 @@ class NikeUi3 extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: Container(
-          child: FlatButton(
+          child: TextButton(
             onPressed: () {},
             child: Text(
               'PAY \$50',
